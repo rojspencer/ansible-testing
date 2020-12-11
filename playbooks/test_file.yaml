@@ -1,8 +1,6 @@
 ---
 - name: Create test file
   hosts: all
-  vars:
-    file_text: "Hi there now"
   tasks:
     - name: create /tmp/rws.txt
       copy:
