@@ -2,6 +2,10 @@
 - hosts: all
   become: true
   tasks:
+    - name: Ensure deltarpm is installed
+      yum:
+        name: deltarpm
+        state: latest
     - name: Run yum upgrade
       yum:
         name: '*'
