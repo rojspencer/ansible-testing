@@ -6,3 +6,4 @@
       yum:
         name: '*'
         state: latest
+        disablerepo: mimecast-prod
